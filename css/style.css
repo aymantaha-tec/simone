@@ -1,0 +1,1042 @@
+/* Start Globle Rules */
+
+/* Changing the primary colors of the site */
+:root {
+    --mainColor: #20c997;  
+    --mainColoreHover: #17ac7f;
+    --seconderyColor:#fff;
+    --siteColor:#dc3545;
+    --counterColor: #6c757d;
+    --settingColor: #555;
+    --headingColor: #252b33;
+    --sectionColor: #f8f9fa;
+    --skillsColor:#e9ecef;
+    --starColor: #ffc107;
+    --color-1: #6610f2;
+    --color-2: #007bff;
+    --color-3: #6f42c1;
+    --color-4: #17a2b8;
+    --color-5: #dc3545;
+    --color-6: #e83e8c;
+    --color-7: #28a745;
+    --color-8: #ffc107;
+    --color-9: #fd7e14;
+    --color-10: #795548;
+    --shadowColor: #dee3e4;
+    --textColor:#4c4d4d;
+
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: "Roboto",sans-serif;
+}
+.container {
+    padding-inline: 15px;
+    margin-inline: auto;
+    width: 1170px;
+}
+
+
+/* Start Header */
+header {
+    background-color: var(--headeeColor);
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    z-index: 999999;
+    display: flex;
+    justify-content: flex-start;
+}
+header .container {
+    position: relative;
+}
+.menu {
+    color: var(--seconderyColor);
+    font-size: 30px;
+    display: none;
+}
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    width: 40px;
+    color: var(--seconderyColor);
+    margin-left: 20px;
+}
+nav {
+margin: auto;
+display: flex;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--seconderyColor);
+    font-weight: 300;
+}   
+nav .active {
+    color: var(--mainColor);
+}
+
+nav ul li:hover a {
+    color: var(--mainColor);
+}
+/* End Header */
+
+/* Start Homepage */
+.homepage {
+    background-image: url(../images/intro-bg.jpg);
+    background-position: center center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.grab {
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.664);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.homepage .title-home-page{
+text-align: center;
+}
+.title-home-page p:first-child  {
+    color: var(--seconderyColor);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.title-home-page p:nth-child(3) {
+    color: var(--seconderyColor);
+    font-size: 1.4rem;
+}
+.title-home-page h1  {
+    color: var(--seconderyColor);
+    margin-block: 1.4rem;
+    font-size: 4rem;
+    position: relative;
+}
+.title-home-page h1::after {
+content: "I'm";
+animation: moving 35s infinite alternate;
+} 
+@keyframes moving {
+    0%{
+        content:"I'm";
+    }
+    1%{
+        content:"I'm S";
+    }
+    2%{
+    content:"I'm Si|";
+    }
+    3%{
+        content:"I'm Sim";
+    }
+    4%{
+        content:"I'm Simo|";
+    }
+    5%{
+        content:"I'm Simon";
+    }
+    6%{
+        content:"I'm Simone|";
+    }
+    7%{
+        content:"I'm Simone";
+    }
+    8%{
+        content:"I'm Simone O|";
+    }
+    9%{
+        content:"I'm Simone Ol";
+    }
+    10%{
+        content:"I'm Simone Oli|";
+    }
+    11%{
+        content:"I'm Simone Oliv";
+    }
+    12%{
+        content:"I'm Simone Olivi|";
+    }
+    13%{
+        content:"I'm Simone Olivia";
+    }
+    14%{
+        content:"I'm Simone Olivi|";
+    }
+    15%{
+        content:"I'm Simone Oliv";
+    }
+    16%{
+        content:"I'm Simone Oli|";
+    }
+    17%{
+        content:"I'm Simone Ol";
+    }
+    18%{
+        content:"I'm Simone O|";
+    }
+    19%{
+        content:"I'm Simone ";
+    }
+    20%{
+        content:"I'm Simone|";
+    }
+    21%{
+        content:"I'm Simon";
+    }
+    22%{
+        content:"I'm Simo|";
+    }
+    23%{
+        content:"I'm Sim";
+    }
+    24%{
+        content:"I'm Si|";
+    }
+    25%{
+        content:"I'm S";
+    }
+    26%{
+        content:"I'm |";
+    }
+    27%{
+        content:"I'm";
+    }
+    28%{
+        content:"I'm |";
+    }
+    29%{
+        content:"I'm a";
+    }
+    30%{
+        content:"I'm a F|";
+    }
+    31%{
+        content:"I'm a Fr";
+    }
+    32%{
+        content:"I'm a Fre|";
+    }
+    33%{
+        content:"I'm a Free";
+    }
+    34%{
+        content:"I'm a Freel|";
+    }
+    35%{
+        content:"I'm a Freela";
+    }
+    36%{
+        content:"I'm a Freelac|";
+    }
+    37%{
+        content:"I'm aFreelace";
+    }
+    38%{
+        content:"I'm a Freelacer|";
+    }
+    39%{
+        content:"I'm a Freelace.";
+    }
+    40%{
+        content:"I'm a Freelac|";
+    }
+    41%{
+        content:"I'm a Freela";
+    }
+    42%{
+        content:"I'm a Freel|";
+    }
+    43%{
+        content:"I'm a Free";
+    }
+    44%{
+        content:"I'm a Free|";
+    }
+    45%{
+        content:"I'm a Fre";
+    }
+    46%{
+        content:"I'm a Fr|";
+    }
+    47%{
+        content:"I'm a F";
+    }
+    48%{
+        content:"I'm a|";
+    }
+    49%{
+        content:"I'm ";
+    }
+    50%{
+        content:"I'm|";
+    }
+    51%{
+        content:"I'm ";
+    }
+    52%{
+        content:"I'm a|";
+    }
+    53%{
+        content:"I'm a P";
+    }
+    54%{
+        content:"I'm aPh|";
+    }
+    55%{
+        content:"I'm a Pho";
+    }
+    56%{
+        content:"I'm a Phot|";
+    }
+    57%{
+        content:"I'm a Photo";
+    }
+    58%{
+        content:"I'm a Photog|";
+    }
+    59%{
+        content:"I'm a Photogr";
+    }
+    60%{
+        content:"I'm a Photogra|";
+    }
+    61%{
+        content:"I'm a Photograp";
+    }
+    62%{
+        content:"I'm a Photograph|";
+    }
+    63%{
+        content:"I'm aPhotographe";
+    }
+    64%{
+        content:"I'm a Photographer.|";
+    }
+    65%{
+        content:"I'm a Photographe";
+    }
+    66%{
+        content:"I'm a Photograph|";
+    }
+    0%{
+        content:"I'm a Photograp";
+    }
+    67%{
+        content:"I'm a Photogra|";
+    }
+    68%{
+        content:"I'm a Photogr";
+    }
+    69%{
+        content:"I'm a Photog|";
+    }
+    70%{
+        content:"I'm a Photo";
+    }
+    71%{
+        content:"I'm a Phot|";
+    }
+    72%{
+        content:"I'm a Pho";
+    }
+    73%{
+        content:"I'm a Ph|";
+    }
+    74%{
+        content:"I'm a P";
+    }
+    75%{
+        content:"I'm a|";
+    }
+    76%{
+        content:"I'm ";
+    }
+    77%{
+        content:"I'm|";
+    }
+    78%{
+        content:"I'm";
+    }
+    79%{
+        content:"I'm a|";
+    }
+    80%{
+        content:"I'm a D";
+    }
+    81%{
+        content:"I'm a De|";
+    }
+    82%{
+        content:"I'm a Des";
+    }
+    83%{
+        content:"I'm a Desi";
+    }
+    84%{
+        content:"I'm a Desi|";
+    }
+    85%{
+        content:"I'm a Desig";
+    }
+    86%{
+        content:"I'm a Design|";
+    }
+    87%{
+        content:"I'm a Designe";
+    }
+    88%{
+        content:"I'm a Designer|";
+    }
+    89%{
+        content:"I'm a Designer.";
+    }
+    90%{
+        content:"I'm a Designer|";
+    }
+    91%{
+        content:"I'm a Designe";
+    }
+    92%{
+        content:"I'm a Design|";
+    }
+    93%{
+        content:"I'm a Desig";
+    }
+    94%{
+        content:"I'm a Desi|";
+    }
+    95%{
+        content:"I'm a Des";
+    }
+    96%{
+        content:"I'm a De|";
+    }
+    97%{
+        content:"I'm a D";
+    }
+    97%{
+        content:"I'm a|";
+    }
+    97.5%{
+        content:"I'm";
+    }
+    98%{
+        content:"I'm|";
+    }
+    98.5%{
+        content:"I'";
+    }
+    99%{
+        content:"I|";
+    }
+    100%{
+        content:"|";
+    }
+    
+}
+.title-home-page a {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    color: var(--mainColor);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid var(--mainColor);
+    padding:  0.7rem 2rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease-out;
+}
+.title-home-page a:hover {
+background-color: var(--mainColor);
+color: var(--seconderyColor);
+}
+.chevron {
+    position: absolute;
+    bottom: 2.5rem;
+    animation: moveToDown 1.5s infinite  ease-out;
+    opacity: 0;
+}
+.chevron a i {
+    color: var(--seconderyColor);
+    font-size: 1.2rem;
+    
+}
+@keyframes moveToDown {
+    0%{
+        bottom: 2.5rem;
+    }
+
+    100% {
+        bottom: 1rem;
+        opacity: 0.8;
+    }
+}
+
+.setting {
+    position: fixed;
+    top: 8rem;
+    right: -0.28rem;
+    transition: all 0.9s ease-in-out;
+    z-index: 999999999999999999;
+}
+.setting:hover {
+    right: 10.7rem;
+}
+.setting a i {
+    color: var(--seconderyColor);
+    background-color: var(--settingColor);
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+.setting-color {
+    width: 12rem;
+    background-color: #fff;
+    position: absolute;
+    left: 2.5rem;
+    top: 0;
+    padding: 0.4rem;
+    z-index: 999999999999999;
+
+}
+.setting-color h2 {
+    font-size: 0.9rem;
+    border-bottom:2px solid #eee ;
+    padding-block: 0.5rem;
+    color: var(--headingColor);
+
+}
+.setting-color ul {
+    list-style: none;
+    padding-block: 1rem;
+}
+.setting-color ul li{
+    width: 1.563rem;
+    height: 1.563rem;
+    margin: 0.25rem 0.125rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #20c997;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.setting-color ul .color-1 {
+    background-color: var(--color-1);
+}
+.setting-color ul .color-2 {
+    background-color: var(--color-2);
+}
+.setting-color ul .color-3 {
+    background-color: var(--color-3);
+}
+.setting-color ul .color-4 {
+    background-color: var(--color-4);
+}
+.setting-color ul .color-5 {
+    background-color: var(--color-5);
+}
+.setting-color ul .color-6 {
+    background-color: var(--color-6);
+}
+.setting-color ul .color-7 {
+    background-color: var(--color-7);
+}
+.setting-color ul .color-8 {
+    background-color: var(--color-8);
+}
+.setting-color ul .color-9 {
+    background-color: var(--color-9);
+}
+.setting-color ul .color-10 {
+    background-color: var(--color-10);
+}
+.setting-color button {
+    background-color: var(--mainColor);
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    color: var(--seconderyColor);
+    margin: 0 0 .5rem 0.49rem;
+    cursor: pointer;
+}
+/* End Homepage */
+
+/* Start about */
+.about {
+    margin-top: 100vh;
+}
+
+.subtitle  h2 {
+    text-align: center;
+    position: relative;
+    top: 75px;
+    z-index: 99999;
+    padding: 10px;
+}
+.subtitle  h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: var(--mainColor);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.subtitle p {
+    text-align: center;
+    font-size: 80px;
+    color: var(--shadowColor);
+    opacity: 0.4;
+    font-weight: bold;
+}
+.about .subtitle h2{
+    font-size: 35px;
+}
+.all {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+.all .child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: baseline;
+    gap: 40px;
+}
+.child .intro h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding-block: 20px;
+}
+.child .intro h3 span {
+    color: var(--mainColor);
+}
+.child .intro p,
+.info p {
+    line-height: 1.8;
+    color: var(--textColor);
+}
+.all .intro {
+    margin-top: 40px;
+}
+.info {
+    min-width: 350px;
+}
+.info p {
+    padding: 7px;
+    font-size: 18px;
+}
+.info p span {
+    font-weight: bold;
+}
+.info p a {
+    text-decoration: none; 
+    color: var(--mainColor);
+}
+.info p:nth-child(-n + 3) {
+    border-bottom: 1px solid var(--shadowColor);
+}
+.info button {
+    font-size: 1.1rem;
+    color: var(--seconderyColor);
+    background-color: var(--mainColor);
+    border: none;
+    padding: 18px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: all 0.3s linear;
+}
+.info button:hover {
+ background-color: var(--mainColoreHover);
+}
+.counter {
+    display: flex;
+    margin-block: 2rem;
+}
+.counter div {
+    text-align: center;
+    padding: 2rem;
+    width: 25%;
+}
+.counter div p:first-child {
+    font-size: 3rem;
+    color: var(--counterColor);
+    padding: 1rem;
+    font-weight: bold;
+} 
+.counter div:not(:last-child) {
+    border-right: 1px solid var(--shadowColor);
+}
+/* End about */
+
+/* Start services */
+.services {
+    background-color: var(--sectionColor);
+}
+.tracks {
+    display: flex;
+    flex-direction: column;
+    padding-block: 2rem;
+}
+.track {
+    display: flex;
+    gap: 1rem
+}
+.track div{
+    display: flex;
+    padding-block: 1rem;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.track div div {
+    display: flex;
+    flex-direction: column;
+}
+.track i {
+    font-size: 2rem;
+    background-color: var(--seconderyColor);
+    color: var(--mainColor) ;
+    background-color: var(--seconderyColor);
+    padding: 18px;
+    margin-top: 18px;
+}
+.track h3 {
+    font-size: 28px;
+}
+.track p {
+    color: var(--textColor);
+    line-height: 1.8;
+}
+/* End services */
+
+/* Start resume */
+.resume {
+    margin-bottom: 4rem;
+}
+.summary {
+    display: flex;
+}
+.summary div {
+    display: flex;
+    flex-direction: column;
+    
+}
+.summary div div {
+display: flex;
+margin-block: 0.7rem ;
+margin-inline-end: 2rem;
+padding: 1rem;
+border: 1px solid var(--shadowColor);
+}
+.summary div  h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.skils h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.summary div div p {
+    margin-block: 0.9rem 1rem ;
+}
+.summary div div p:first-child {
+    background-color: var(--mainColor);
+    width: fit-content;
+    color: var(--seconderyColor);
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.3rem;
+}
+.summary div div p:nth-child(3) {
+    color: var(--siteColor);
+}
+.summary div div p:last-child {
+    line-height: 1.8;
+    color: var(--textColor);
+}
+
+.container-1 {
+    display: flex;
+}
+.container-1 > div {
+    width: 50%;
+    margin-inline-end: .1rem
+}
+.container-1 div div {
+margin-inline-end: 1rem;
+}
+.container-1 div div div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1rem;
+}
+
+.container-1 div div div:last-child {
+    height: 0.6rem;
+    background-color: var(--skillsColor);
+    border-radius: 1rem;
+}
+.web {
+    background-image: linear-gradient(to right, var(--mainColor), var(--mainColor) 65%, var(--skillsColor) 65%);
+}
+.html-css {
+    background-image: linear-gradient(to right, var(--mainColor), var(--mainColor) 95%, var(--skillsColor) 95%);
+}
+.js {
+    background-image: linear-gradient(to right, var(--mainColor), var(--mainColor) 80%, var(--skillsColor) 80%);
+}
+.react {
+    background-image: linear-gradient(to right, var(--mainColor), var(--mainColor) 70%, var(--skillsColor) 70%);
+}
+.angular {
+    background-image: linear-gradient(to right, var(--mainColor), var(--mainColor) 60%, var(--skillsColor) 60%);
+}
+.bootstrap {
+    background-image: linear-gradient(to right, var(--mainColor), var(--mainColor) 99%, var(--skillsColor) 99%);
+}
+.resume button {
+    display: block;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    margin-inline: auto;
+    background-color: var(--seconderyColor);
+    border: 2px solid var(--counterColor);
+    border-radius: 2rem;
+    color: var(--textColor);
+    transition: all 0.5s ease;
+    font: 1.2rem;
+}
+.resume button:hover {
+    background-color: var(--counterColor);
+    color: var(--seconderyColor);
+    cursor: pointer;
+}
+/* End resume */
+
+/* Start Portfolio */
+.selects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.selects a {
+    text-decoration: none;
+    color: var(--textColor);
+
+}
+.selects a.active {
+    color: var(--mainColor);
+    border-bottom: 2px solid var(--mainColor) ;
+    padding-bottom: 1rem;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 150vh;
+}
+.image-gallery .design {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    width: calc(100% / 3)
+}
+.image-gallery .img{
+    width: 100%;
+}
+.image-gallery img{
+    width: 100%;
+    display:block;
+}
+
+.design .filter {
+position: absolute;
+top: 10px;
+width: calc(100% - 20px);
+height: calc(100% - 20px);
+left: 10px;
+background-color: rgba(0, 0, 0, 0.491);
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+color: var(--seconderyColor);
+cursor: pointer;
+opacity: 0;
+transition: 0.5s;
+}
+.design:hover .filter {
+    opacity: 1;
+}
+/* End Portfolio */
+
+
+
+/* Start client */
+.client {
+    margin-bottom: 100px;
+}
+.rate {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem
+    ;
+}
+.person {
+    background-color: var(--sectionColor);
+    padding: 2rem;
+}
+.rate .title {
+    display: flex;
+    align-items: center;
+    margin-block: 2rem;
+}
+.rate .title .img {
+    margin-right: 1rem;
+}
+.rate .title .img img {
+    border-radius: 50%;
+}
+.rate .title h5 {
+    font-size: 20px;
+}
+.person .pra p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+.star {
+    color: var(--starColor);
+}
+/* End client */
+
+/* Start Contant */
+.Contant {
+    background-color: var(--sectionColor);
+    padding-bottom: 100px;
+}
+.cont {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+form {
+    
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+form h5 {
+
+    font-size: 20px;
+}
+.input-name {
+    display: flex;
+    width: 100%;
+    
+}
+form .one {
+    width: 50%;
+    margin-block: 30px;
+    height: 40px;
+    outline: none;
+}
+form .two-1 {
+    margin-right: 10px;
+}
+form .two {
+    margin-left: 10px;
+}
+form .one::placeholder {
+    padding-left: 10px;
+}
+textarea {
+    height: 100px;
+    margin-bottom: 30px;
+    outline: none;
+}
+form button {
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--mainColor);
+    color: var(--seconderyColor);
+    border: none;
+    font-size: 25px;
+}
+form button:hover {
+    background-color: var(--mainColoreHover);
+}
+.address {
+    padding: 10px;
+}
+.address h5 {
+    font-size: 20px;
+}
+.address p {
+    color: var(--textColor);
+    margin-block: 0.8rem 
+}
+/* End Contant */
+
+/* Start Footer  */
+footer {
+    margin-block: 4rem
+}
+footer .foot {
+    display: flex;
+    justify-content: space-between;
+} 
+.foot .copy a{
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+.foot .link a {
+    text-decoration: none;
+    color: var(--textColor);
+    margin-right: 20px;
+}
+.foot .link a:first-child {
+    border-right: 1px  solid;
+    padding-right: 30px;
+}
+.foot .link a:hover {
+    color: var(--mainColor);
+    
+}
+/* End Footer  */

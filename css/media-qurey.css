@@ -1,0 +1,203 @@
+/* Medium desktop :992px. */
+@media  (min-width: 1200px) and (max-width: 1500px) {
+
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Tablet desktop :768px. */
+@media  (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+    .all .child {
+        flex-direction: column;
+    }
+    .info {
+        min-width: 100%;
+    }
+    .image-gallery {
+        height: 291vh ;
+    }
+    .image-gallery .design {
+        width: 50%;
+    }
+    .pin {
+        order: 2;
+    }
+    .layer {
+        order : 3;
+    }
+    .toy {
+        order : 4;
+    }
+    .mob {
+        order : 5;
+    }
+    .paper {
+        order : 6;
+    }
+    .charger {
+        order : 7;
+    }
+    .cont {
+
+        flex-direction: column;
+        align-items: center;
+    }
+    form {
+        order: -1;
+    }
+    footer .foot {
+        flex-direction: column;
+        align-items: center;
+    }
+    .copy {
+        padding-top: 100px;
+    }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    nav {
+        margin-right: 7rem;
+    }
+    .menu {
+        display: block;
+        margin-left: 100%;
+    }
+    nav ul {
+        display: none;
+        background-image: repeating-linear-gradient(transparent , transparent 10%, rgba(6, 0, 0, 0.806) 10% , rgba(6, 0, 0, 0.806) 100%);
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+    .title-home-page h1 {
+        font-size: 38px;
+    }
+    nav:hover ul {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li:not(:last-child) {
+        border-bottom: 1px solid rgba(110, 110, 110, 0.532);
+    }
+    .all .child {
+        flex-direction: column;
+    }
+    .info {
+        min-width: 100%;
+        
+    }
+    .intro {
+        text-align: center;
+    }
+    .counter{
+        flex-wrap: wrap;
+    }
+    .counter div {
+    width: 50%;
+    }
+    .counter div:nth-child(even) {
+        border-right: none;
+    }
+    .counter div:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--shadowColor);;
+    }
+    .track,
+    .summary,
+    .container-1 {
+        flex-direction: column;
+    }
+    .container-1 > div {
+        width: 100%;
+    }
+    .summary div div,
+    .container-1 div div {
+        margin-inline-end: 0rem;
+    }
+    .image-gallery {
+        height: 338vh;
+    }
+    .rate {
+        flex-direction: column;
+    }
+    .subtitle p {
+        font-size: 40px;
+    }
+    .subtitle h2{
+        font-size: 15px;
+    }
+    .subtitle  h2 {
+        top: 45px;
+    }
+
+    .image-gallery {
+        height: 500vh ;
+    }
+    .image-gallery .design {
+        width: 100%;
+    }
+    .pin {
+        order: 3;
+    }
+    .layer {
+        order : 4;
+    }
+    .toy {
+        order : 7;
+    }
+    .mob {
+        order : 2;
+    }
+    .paper {
+        order : 5;
+    }
+    .charger {
+        order : 6;
+    }
+    .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    form {
+        order: -1;
+    }
+    .input-name {
+        flex-direction: column;
+    }
+    form .one {
+        width: 100%;
+    }
+    form .two {
+        margin-left: 0px;
+    }
+    form button {
+      margin-bottom: 20px;
+    }
+    footer .foot {
+        flex-direction: column;
+    }
+}
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width:450px
+    }
+    
+ 
+}
